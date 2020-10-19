@@ -1,6 +1,6 @@
 # Common
 
-**Basic setup**
+## Basic setup
 
 Start a new node project:
 
@@ -14,7 +14,7 @@ Added an `index.html` and `src/index.js`, the index.html has a lodash loaded fro
 
 The "main" field in package.json is changed to "private" to prevent accidental publishing of the repo.
 
-There is an implicit dependency between the script tags. 
+There is an implicit dependency between the script tags.
 Our index.js file depends on lodash being included in the page before it runs. This is because index.js never explicitly declared a need for lodash; it just assumes that the global variable _ exists.
 
 There are problems with managing JavaScript projects this way:
@@ -24,7 +24,7 @@ There are problems with managing JavaScript projects this way:
 - If a dependency is included but not used, the browser will be forced to download unnecessary code.
 Let's use webpack to manage these scripts instead.
 
-**Creating a bundle**
+## Creating a bundle
 
 We tweak the directory structure:
 
@@ -36,3 +36,8 @@ We'll install lodash locally to bundle it.
 `npm install --save lodash`
 
 Remove the lodash script from the index.html, and add the import in index.js. So now, there's no global scope pollution. The `index.js` script is the entry point when we run `npx webpack`. Generated code is: `dist/main.js` -- the output.
+
+- Add config.
+- Add `package.json` script
+
+`npm install --save-dev style-loader css-loader` to add a css loader.
