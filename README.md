@@ -45,5 +45,3 @@ Remove the lodash script from the index.html, and add the import in index.js. So
 `npm install --save-dev file-loader` to add a file loader.
 
 `npm install --save-dev csv-loader xml-loader` to add xml and csv data. 
-
-`npm install toml yamljs json5 --save-dev` to add json, toml, yaml.
