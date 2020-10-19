@@ -34,3 +34,5 @@ We tweak the directory structure:
 We'll install lodash locally to bundle it.
 
 `npm install --save lodash`
+
+Remove the lodash script from the index.html, and add the import in index.js. So now, there's no global scope pollution. The `index.js` script is the entry point when we run `npx webpack`. Generated code is: `dist/main.js` -- the output.
