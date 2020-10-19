@@ -41,3 +41,5 @@ Remove the lodash script from the index.html, and add the import in index.js. So
 - Add `package.json` script
 
 `npm install --save-dev style-loader css-loader` to add a css loader.
+
+`npm install --save-dev file-loader` to add a file loader.
