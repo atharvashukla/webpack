@@ -49,3 +49,5 @@ Remove the lodash script from the index.html, and add the import in index.js. So
 `npm install --save-dev html-webpack-plugin` helps bundle.
 
 `npm install --save-dev clean-webpack-plugin` cleans dist.
+
+`npm install --save-dev express webpack-dev-middleware` for production.
